@@ -1,5 +1,9 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 df = pd.DataFrame({'Name': ['Olga', 'Maks', 'Slava'], 'Aga': [22, 34, 45]})
 df.head()
 print(df.head())
+sns.barplot(x='Name', y='Aga', data=df)
+plt.show()
